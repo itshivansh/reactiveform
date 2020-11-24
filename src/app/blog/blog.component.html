@@ -1,7 +1,7 @@
 <div id = "blog">
   <div class="container">
     <!-- write logic to handle form submission by calling onSubmit() method-->
-      <form [formGroup]="form" >
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" >
       <div class="row">
         <div class="col-25">
           <label>Blog Title</label>
@@ -45,6 +45,7 @@
 
          <!-- write logic to display message -->
       <div class="alert" >
+        {{message}}
       </div>
   </div>
 </div>
